@@ -1,0 +1,78 @@
+.crop-inventory-container {
+  background: rgba(255,255,255,0.7);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.add-crop-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-crop-row input[type="text"] {
+  flex: 1;
+  min-width: 0;
+}
+
+.crop-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.crop-list-item {
+  display: flex;
+  align-items: center;
+  background: rgba(0,123,255,0.07);
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.08rem;
+  color: #1b5e20;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: background 0.2s;
+  gap: 1rem;
+}
+
+.crop-list-item:hover {
+  background: rgba(0,123,255,0.13);
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #e53935;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+  margin-right: 0.7rem;
+}
+
+.remove-btn:hover {
+  background: rgba(229,57,53,0.08);
+}
+
+.crop-name {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+}
+
+.crop-time {
+  font-size: 0.92rem;
+  color: #00796b;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.empty-list {
+  color: #888;
+  text-align: center;
+  padding: 1rem 0;
+}

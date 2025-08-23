@@ -11,7 +11,7 @@ const App = () => {
 
     const calculateResult = () => {
         try {
-            setResult(eval(input)); // Note: eval can be dangerous, consider using a safer alternative for production
+            setResult(eval(input)); // Note: eval can b the dangerous, consider using a safer alternative for production
             setInput('');
         } catch (error) {
             setResult('Error');

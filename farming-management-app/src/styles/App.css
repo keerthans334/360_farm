@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0ffe6 0%, #b3e6ff 100%);
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #1b5e20;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.translucent-button {
+  background: rgba(0, 123, 255, 0.18);
+  border: none;
+  border-radius: 12px;
+  color: #1b5e20;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.translucent-button:hover {
+  background: rgba(0, 123, 255, 0.32);
+  color: #0056b3;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.13);
+}
+
+h2 {
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.date-time {
+  color: #00796b;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1.2rem 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(200, 230, 255, 0.25);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  font-size: 1rem;
+  color: #1b5e20;
+  outline: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  background: rgba(0, 123, 255, 0.09);
+  box-shadow: 0 2px 12px rgba(0,123,255,0.13);
+}

@@ -1,0 +1,92 @@
+.sidebar {
+  width: 230px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 1.5rem;
+  background: rgba(245,245,245,0.7);
+  border-right: 1px solid #e0e0e0;
+  /* Add a subtle shadow for depth */
+  box-shadow: 2px 0 16px 0 rgba(56, 142, 60, 0.07);
+}
+
+.sidebar-logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #388e3c;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-emoji {
+  font-size: 2.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.farmwise-title {
+  font-size: 1.3rem;
+  color: #388e3c;
+  margin-top: 0.2rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #8d6e63;
+  font-weight: 400;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.sidebar nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.08rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s;
+}
+
+/* Add focus style for keyboard navigation */
+.sidebar nav a:focus {
+  outline: 2px solid #388e3c;
+  outline-offset: 2px;
+  background: linear-gradient(90deg, #c8e6c9 0%, #fffde7 100%);
+}
+
+.sidebar nav a.active-link,
+.sidebar nav a:hover {
+  background: linear-gradient(90deg, #a5d6a7 0%, #fffde7 100%);
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+/* Responsive: collapse sidebar on small screens */
+@media (max-width: 700px) {
+  .sidebar {
+    width: 100vw;
+    min-height: unset;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 16px 0 rgba(56, 142, 60, 0.07);
+  }
+  .sidebar-logo {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+  .sidebar nav {
+    flex-direction: row;
+    gap: 0.5rem;
+    width: auto;
+  }
+}

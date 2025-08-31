@@ -1,0 +1,36 @@
+.glass-card {
+  background: rgba(255,255,255,0.55);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.09);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.2s;
+}
+
+.glass-card:hover {
+  box-shadow: 0 12px 36px 0 rgba(31,38,135,0.13);
+}
+
+.translucent-btn {
+  background: rgba(56, 142, 60, 0.18);
+  color: #1b5e20;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.translucent-btn:hover {
+  background: rgba(56, 142, 60, 0.32);
+  color: #0056b3;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.13);
+}

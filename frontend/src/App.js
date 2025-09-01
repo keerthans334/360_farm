@@ -7,6 +7,7 @@ import AddInventoryItem from "./components/AddInventoryItem";
 import Crops from "./components/Crops";
 import Fields from "./components/Fields";
 import Livestock from "./components/Livestock";
+import SeedingPlanner from "./components/SeedingPlanner";
 import "./styles/App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/crops" element={<Crops />} />
             <Route path="/fields" element={<Fields />} />
             <Route path="/livestock" element={<Livestock />} />
+            <Route path="/seeding" element={<SeedingPlanner />} />
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
           </Routes>
         </main>

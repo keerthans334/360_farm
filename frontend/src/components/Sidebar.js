@@ -6,6 +6,7 @@ import inventoryIcon from "../assets/inventory.svg";
 import cropsIcon from "../assets/crops.svg";
 import fieldsIcon from "../assets/fields.svg";
 import livestockIcon from "../assets/livestock.svg";
+import seedingIcon from "../assets/seeding.svg";
 
 export default function Sidebar() {
   return (
@@ -35,6 +36,10 @@ export default function Sidebar() {
         <NavLink to="/livestock" activeClassName="active-link">
           <span className="sidebar-link-icon"><img src={livestockIcon} alt="Livestock" /></span>
           Livestock
+        </NavLink>
+        <NavLink to="/seeding" activeClassName="active-link">
+          <span className="sidebar-link-icon"><img src={seedingIcon} alt="Seeding & Planting" /></span>
+          Seeding & Planting
         </NavLink>
       </nav>
     </aside>

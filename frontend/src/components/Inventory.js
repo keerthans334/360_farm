@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/GlassCard.css";
 import TranslucentButton from "./TranslucentButton";
 
 export default function Inventory() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <h2>Inventory Management</h2>
@@ -28,7 +31,9 @@ export default function Inventory() {
         <div className="inventory-table-section">
           <div className="inventory-table-header">
             <h3>Crop Inventory</h3>
-            <TranslucentButton>+ Add Item</TranslucentButton>
+            <TranslucentButton onClick={() => navigate("/inventory/add")}>
+              + Add Item
+            </TranslucentButton>
           </div>
           <table className="inventory-table">
             <thead>
@@ -49,7 +54,9 @@ export default function Inventory() {
                 <td>$0.45</td>
                 <td>$0.62</td>
                 <td className="green">37.8%</td>
-                <td><span className="status in-stock">In Stock</span></td>
+                <td>
+                  <span className="status in-stock">In Stock</span>
+                </td>
                 <td>↗</td>
               </tr>
               <tr>
@@ -58,7 +65,9 @@ export default function Inventory() {
                 <td>$0.38</td>
                 <td>$0.51</td>
                 <td className="green">34.2%</td>
-                <td><span className="status in-stock">In Stock</span></td>
+                <td>
+                  <span className="status in-stock">In Stock</span>
+                </td>
                 <td>↗</td>
               </tr>
               <tr>
@@ -67,7 +76,9 @@ export default function Inventory() {
                 <td>$2.20</td>
                 <td>$3.85</td>
                 <td className="green">75.0%</td>
-                <td><span className="status low-stock">Low Stock</span></td>
+                <td>
+                  <span className="status low-stock">Low Stock</span>
+                </td>
                 <td>↘</td>
               </tr>
               <tr>
@@ -76,7 +87,9 @@ export default function Inventory() {
                 <td>$0.85</td>
                 <td>$1.25</td>
                 <td className="green">47.1%</td>
-                <td><span className="status in-stock">In Stock</span></td>
+                <td>
+                  <span className="status in-stock">In Stock</span>
+                </td>
                 <td>•</td>
               </tr>
             </tbody>

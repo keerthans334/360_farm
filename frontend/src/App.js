@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import Inventory from "./components/Inventory";
+import AddInventoryItem from "./components/AddInventoryItem";
 import Crops from "./components/Crops";
 import Fields from "./components/Fields";
 import Livestock from "./components/Livestock";
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/inventory" element={<Inventory />} />
+            <Route path="/inventory/add" element={<AddInventoryItem />} />
             <Route path="/crops" element={<Crops />} />
             <Route path="/fields" element={<Fields />} />
             <Route path="/livestock" element={<Livestock />} />

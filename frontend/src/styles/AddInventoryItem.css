@@ -1,0 +1,124 @@
+.add-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  background: #f7f8fa;
+}
+
+.add-item-card {
+  max-width: 540px;
+  width: 100%;
+  margin-top: 2.5rem;
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.09);
+  border: 1px solid #ececec;
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #1b5e20;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.back-btn:hover {
+  color: #388e3c;
+}
+
+.add-item-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+.add-item-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.add-item-form {
+  margin-top: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e0e3e7;
+  font-size: 1rem;
+  background: #fff;
+  margin-bottom: 0.2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border: 1.5px solid #388e3c;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+}
+
+.form-group textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cancel-btn {
+  background: none;
+  border: 1px solid #e0e3e7;
+  color: #555;
+  border-radius: 12px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.cancel-btn:hover {
+  background: #f1f1f1;
+  color: #1b5e20;
+  border: 1.5px solid #388e3c;
+}
+
+@media (max-width: 700px) {
+  .add-item-card {
+    padding: 1.2rem 0.5rem;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
